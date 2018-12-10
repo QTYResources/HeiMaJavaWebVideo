@@ -1,0 +1,77 @@
+<!--
+    对应：10-表单标签一.html
+    （1）表单标签
+        <form></form>
+        1. action属性：提交到地址，默认提交到当前的页面
+        2. method属性：表单提交方式，常用的有两种：get和post，默认是get请求
+        3. 面试题目：get和post区别
+            a. get请求地址栏会携带提交的数据，post不会携带（请求体里面。在第七天时候讲http协议时候）
+            b. get请求安全级别较低，post较高
+            c. get请求数据大小的限制，post没有限制
+        4. 输入项：可以输入内容或者选择内容的部分
+            a. 大部分的输入项使用<input type="输入项的类型" />，在输入项里面需要有一个name属性。
+            b. 普通输入项：<input type="text" />
+            c. 密码输入项：<input type="password" />
+            d. 单选输入项：<input type="radio" />, 在里面需要属性name，name的属性值必须要相同，必须有一个value值；实现默认选中的属性checked="checked"
+            e. 复选输入项：<intpu type="checkbox"/>，在里面需要属性name，name的属性值必须要相同，必须有一个value值；实现默认选中的属性checked="checked"
+            f. 文件输入项（在后面上传时候用到）：<input type="file"/>
+            g. 下拉输入项（不是在input标签里面的）：
+                <select name="birth">
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                </select>
+                默认选择：
+                selected="selected"
+            h. 隐藏项（不会显示在页面上，但是存在于html代码里面）
+                <input type="hidden"/>
+            i. 提交按钮
+                <input type="submit"/>
+                <input type="submit" value="注册"/>
+                
+                file:///C:/Users/asus/Desktop/0413/day01/code/10-表单标签一.html
+			 ?sex=on&love=on&love=on&birth=1991
+			    当在输入项里面写了name属性之后 
+			    file:///C:/Users/asus/Desktop/0413/day01/code/10-表单标签一.html
+			?phone=2222&pwd=3333&sex=on&love=on&birth=1993&tex=aaaaaaaa&hid=
+			    file:///C:/Users/asus/Desktop/0413/day01/code/10-表单标签一.html?
+			phone=130111111&pwd=123456&sex=nv&love=y&love=p&love=pp&birth=1992&tex=good+love&hid=
+			    ?输入项name的值=输入的值&
+			    参数类似于key-value形式
+            j. 使用图片提交
+                <input type="image" src="图片路径" />
+            k. 重置按钮：回到输入项的初始状态
+                <input type="reset"/>
+            l. 普通按钮（和明天讲js在一起使用的）
+                <input type="button" value=""/>
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8"/>
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <form action="hello.html" method="get">
+            手机号码：<input type="text" name="phone"/><br/>
+            创建密码：<input type="password" name="pwd"/><br/>
+            性别：<input type="radio" name="sex" value="nv" checked="checked"/>女 <input type="radio" name="sex" value="nan"/>男<br/>
+            爱好：<input type="checkbox" name="love" value="y"/>羽毛球 <input type="checkbox" name="love" value="p" checked="checked"/>乒乓球 <input type="checkbox" name="love" value="pp"/>排球<br/>
+            文件：<input type="file"/><br/>
+            生日：<select name="birth">
+                <option value="0">请选择</option>
+                <option value="1991" selected="selected">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+            </select>
+            <br/>
+            自我描述：<textarea cols="10" rows="10" name="tex"></textarea><br/>
+            隐藏项：<input type="hidden" name="hid"/><br/>
+            <input type="submit" value="注册"/>
+            <input type="reset" value="重置注册"/>
+            <input type="button" value="普通按钮"/>
+            <br/>
+            <input type="image" src="b.jpg" />
+        </form>
+    </body>
+</html>

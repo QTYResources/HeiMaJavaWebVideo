@@ -1,0 +1,40 @@
+<!--
+    对应：04-图像标签.html
+    （1）图像标签
+        <img src="图片的路径" />
+        1. src：图片的路径
+        2. width：图片的宽度
+        3. height：图片的高度
+        4. alt：图片上显示的文字，把鼠标移动到图片上，停留片刻显示内容（有些浏览器下不显示（没有效果）
+    （2）路径的介绍
+        1. 绝对路径
+            C:\Users\asus\Desktop\0413\day01\code\a.jpg
+            http://www.baidu.com/b.jpg
+        2. 相对路径(一个文件相对于另外一个文件的位置)
+            a. html文件和图片在一个路径下，可以直接写文件名称
+                <img src="b1.jpg" alt="这是一个美女" />
+            b. 图片在html的下层目录
+                例如在html文件中，使用img文件夹下面的a.jpg：
+                <img src="img\a.jpg" alt="这是一个美女" />
+            c. 图片在html文件的上层目录
+                例如使用html文件的上层目录中的b.jpg
+                <img src="..\b.jpg" alt="这是一个美女" />
+            d. 表示上层路径的方法: ../
+            e. 表示上层的上层路径的方法：../../
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8"/>
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <img src="b.jpg" alt="这是一个美女" />
+
+        <img src="w02.jpg" width="300" height="400" alt="这是图片上的文字" />
+
+        <img src="img\a.jpg" alt="这是一个美女" />
+
+        <img src="../c.png" alt="这是一个美女" />
+    </body>
+</html>

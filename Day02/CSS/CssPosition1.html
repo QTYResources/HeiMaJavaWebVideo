@@ -1,0 +1,46 @@
+<!--
+    对应：16-css布局的定位.html
+    （1）css的布局定位（了解）
+        position
+        1. absolute属性值
+            a. 将对象从文档流中拖出
+            b. 可以是top、bottom等属性进行定位
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+        <style type="text/css">
+            div {
+                width: 200px;
+                height: 150px;
+                border: 2px solid blue;
+            }
+
+            #div51 {
+                background-color:red;
+
+                position: absolute;
+
+                top:80px;
+                left:120px;
+            }
+
+            #div52 {
+                background-color:green;
+                width:250px;
+                height:150px;
+            }
+
+            #div53 {
+                background-color:orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div51">AAAAAAAAAAAAA</div>
+        <div id="div52">BBBBBBBBBBBBB</div>
+        <div id="div53">CCCCCCCCCCCCC</div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!--
+    对应：05-js的运算符.html
+    （1）JavaScript的运算符
+        1. +=：x+=y  ===> x = x + y
+        2. JavaScript里面不区分整数和小数
+            var j = 123;
+            alert(j/1000*1000);
+        3. 字符串的相加和相减的操作
+            a. var str = "123";
+                // 如果相加的时候，做是字符串连接
+                // 如果相减，做的是相减的运算
+            b. 字符串的操作
+                var str = "abc";
+                alert(str - 1);
+                // 提示NaN：表示不是一个数字
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var j = 123;
+            alert(j/1000*1000); // 在Java里面得到结果是0
+            // 在JavaScrip里面不区分整数和小数，123/1000 = 0.123 * 1000 = 123
+
+            // 字符串的操作
+            var str = "abc";    // 提示NaN：表示不是一个数字
+            // alert(str + 1);  // 在Java里面操作的结果是4561, 在JavaScript里面还是4561
+            alert(str -1);  // 相减时候，执行减法的运算
+        </script>
+    </body>
+</html>

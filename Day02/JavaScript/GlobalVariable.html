@@ -1,0 +1,31 @@
+<!--
+    对应：11-js的全局变量.html
+    （1）JavaScript全局变量
+        在script标签里面定义一个变量，这个变量在页面中js部分都可以使用
+        在方法外部使用，在方法内部使用，在另外一个script标签使用
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var aa = 10;
+
+            alert("在方法外部调用aa：" + aa);
+
+            // 定义一个方法
+            function test1() {
+                alert("在方法内部调用aa：" + aa);
+            }
+
+            test1();
+        </script>
+
+        <script type="text/javascript">
+            alert("在另外一个script标签使用aa：" + aa);
+        </script>
+    </body>
+</html>

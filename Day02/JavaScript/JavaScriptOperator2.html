@@ -1,0 +1,47 @@
+<!--
+    对应：06-js的运算符二.html
+    （1）JavaScript运算符二
+        1. boolean类型也可以操作
+            a. 如果设置成true，相当于这个值是1
+            b. 如果设置成false，相当于这个值是0
+        2. == 和 === 区别
+            a. 做判断
+            b. == 比较的只是值
+            c. === 比较的是指和类型
+
+        3. 引入知识
+            a. 直接向页面输出的语句（可以吧内容显示在页面上）
+                document.write("aaa");
+                document.write("<hr/>");
+            b. 可以向页面输出变量，固定值和html代码
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // boolean操作
+            var flag = true;    // 等于1
+            alert(flag + 1);
+
+            var flag1 = false;  // 等于0
+            alert(flag1 + 1);
+
+            // == 和 === 区别
+            var aa = "5";
+            if (aa == "5") {
+                alert("5");
+            } else {
+                alert("other");
+            }
+
+            document.write("aaaaaaaaaaaa");
+            document.write("<br/>");
+            document.write("bbbbbbbbbbbb");
+            document.write("<hr/>");
+        </script>
+    </body>
+</html>

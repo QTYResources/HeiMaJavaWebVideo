@@ -1,0 +1,27 @@
+<!--
+    对应：12-js的局部变量
+    （1）JavaScript局部变量
+        在方法内部定义一个变量，只能在方法内部使用
+        1. 如果在方法外部调用这个变量，提示出错
+            SCRIPT5009: "nn"未定义
+        2. IE自带了一个调试工具，IE8及其以上的版本中，键盘上F12，在页面下方出现一个条
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function test11() {
+                var nn = 10;
+                alert("在方法内部：" + nn);
+            }
+
+            test11();
+
+            alert("方法外部：" + nn);
+        </script>
+    </body>
+</html>

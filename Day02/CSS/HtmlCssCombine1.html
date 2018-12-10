@@ -1,0 +1,37 @@
+<!--
+    对应：01-css和html的结合方式一.html
+    （1）CSS和HTML的结合方式
+        1. 在每个html标签上面都有一个属性style，把css和html结合在一起
+            <div style="background-color:red;color:green;">
+        2. 使用html的一个标签实现<style>标签，写在head里面
+            <style type="text/css">
+                css代码；
+            </style>
+        3. 优先级
+            1. 由上到下，由外到内。优先级由低到高。
+            2. 后加载的优先级高。
+        4. 格式：
+            选择器名称 {
+                属性名: 属性值;
+                属性名: 属性值；
+                ......
+            }
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+        <style type="text/css">
+            div {
+                background-color:gray;
+                
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color:red;color:green;">天之道，损有余而补补足，是故虚胜实，不足胜有余。</div>
+        <div>变化之由表，死生之兆彰，不谋而遗迹自同，</div>
+    </body>
+</html>

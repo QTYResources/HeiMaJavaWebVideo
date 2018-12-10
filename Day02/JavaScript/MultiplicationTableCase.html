@@ -1,0 +1,47 @@
+<!--
+    对应：07-99乘法表的练习.html
+    （1）实现99乘法表（输出到页面上）
+        document.write("<table border='1' bordercolor='blue'>");
+            // 循环行9
+            for (var i = 1; i <= 9; i++) {
+                document.write("<tr>");
+                // 循环列
+                for (var j = 1; j <= i; j++) {
+                    document.write("<td>");
+                    // 运算
+                    document.write(j +"*"+i+"="+i*j);
+                    document.write("</td>");
+                }
+                // document.write("<br/>");
+                document.write("</tr>");
+            }
+        document.write("</table>");
+        1. document.write里面是双引号，如果设置标签的属性需要使用单引号
+        2. document.write可以输出变量，还可以输出html代码
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            document.write("<table border='1' bordercolor='blue'>");
+            // 循环行9
+            for (var i = 1; i <= 9; i++) {
+                document.write("<tr>");
+                // 循环列
+                for (var j = 1; j <= i; j++) {
+                    document.write("<td>");
+                    // 运算
+                    document.write(j +"*"+i+"="+i*j);
+                    document.write("</td>");
+                }
+                // document.write("<br/>");
+                document.write("</tr>");
+            }
+            document.write("</table>");
+        </script>
+    </body>
+</html>

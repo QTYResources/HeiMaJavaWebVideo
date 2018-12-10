@@ -1,0 +1,44 @@
+<!--
+    对应：17-css布局的定位.html
+    （1）css布局的定位（了解）
+        position
+        1. relative属性值
+            a. 不会把对象从文档流中拖出
+            b. 可以使用top、bottom等属性进行定位
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+        <style type="text/css">
+            div {
+                width: 200px;
+                height: 150px;
+                border: 2px solid blue;
+            }
+
+            #div51 {
+                background-color: red;
+
+                position: relative;
+
+                top: 80px;
+                left: 120px;
+            }
+
+            #div52 {
+                background-color: green;
+            }
+
+            #div53 {
+                background-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div51">AAAAAAAAAAAAAA</div>
+        <div id="div52">BBBBBBBBBBBBBB</div>
+        <div id="div53">CCCCCCCCCCCCCC</div>
+    </body>
+</html>

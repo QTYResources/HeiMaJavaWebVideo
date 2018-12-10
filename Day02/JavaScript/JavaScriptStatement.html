@@ -1,0 +1,73 @@
+<!--
+    对应：04-js的语句一.html
+    （1）JavaScript的语句
+        1. if判断语句
+            a. =: 表示赋值
+            b. ==: 表示判断
+        2. switch语句
+            a. JavaScript中switch支持所有类型的判断
+                switch(a) {
+                    case 5:
+                        break;
+                    case 6:
+                        break;
+                    default:
+                        ......
+                }
+        3. 循环语句 for while do-while
+            a. while循环语句
+                var i = 5;
+                while (i > 1) {
+                    alert(i);
+                    i--;
+                }
+            b. for循环语句
+                for (var mm = 0; mm <= 3; mm++) {
+                    alert(mm);
+                }
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // if语句
+            var a = 5;
+            if (a == 5) {
+                alert("5");
+            } else {
+                alert("6");
+            }
+
+            // switch语句
+            var b = 60;
+            switch (b) {
+                case 3:
+                    alert("3");
+                    break;
+                
+                case 6:
+                    alert("6");
+                    break;
+
+                default:
+                    alert("other");
+            }
+
+            // while循环
+            var i = 5;
+            while (i > 1) {
+                alert(i);
+                i--;
+            }
+
+            // for循环
+            for (var mm = 0; mm <= 3;mm++) {
+                alert(mm);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!--
+    对应：08-css基本选择器的优先级.html
+    （1）选择器优先级
+        style > id选择器 > class选择器 > 标签选择器
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+        <style type="text/css">
+            #hehe1 {
+                background-color:orange;
+            }
+
+            .haha1 {
+                background-color: green;
+            }
+
+            div {
+                background-color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="haha1" id="hehe1" style="background-color:gray;">故动则有成，犹鬼神幽赞，而命世奇杰，时时间出焉</div>
+        <div>aaaaaaaaaaaaaaaaaaaaaa</div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!--
+    对应：13-script标签的位置.html
+    （1）script标签放在的位置
+        1. 建议把script标签放到</body>后面
+        2. 如果现在有这样一个需求：
+            a. 在js里面需要获取到input里面的值，如果把script标签放到head里面会出现问题
+            b. html解析是从上到下解析的，script标签放到的是head里面，直接在里面取input里面的值，因为页面还没有解析到input那一行，肯定取不到。
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+        <script type="text/javascript">
+            //alert("aaaa");
+            var input1 = document.getElementById("nameid");
+            alert(input1.value);    // SCRIPT5007：无法获取属性"value"的值：对象为null或未定义
+        </script>
+    </head>
+    <body>
+        <input type="text" name="name" id="nameid" value="aaa" />
+    </body>
+</html>

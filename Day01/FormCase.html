@@ -1,0 +1,83 @@
+<!--
+    对应：11-案例 表单标签实现注册页面.html
+    （1）案例：使用表单标签实现注册页面
+        1. 使用表格实现页面效果
+        2. 超链接不想要他有效果href="#"
+        3. 如果表格里面的单元格没有内容，使用空格作为占位符&nbsp;
+        4. 使用图片提交表单<input type="image" src="图片的路径" />
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8"/>
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <h2>注册传智播客的账号</h2>
+        <form action="hello.html">
+            <table width="100%">
+                <tr>
+                    <td align="right">注册邮箱：</td>
+                    <td><input type="text" name="mail"/></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>你可以使用<a href="#">账号</a>注册或者使用<a href="#">手机号</a>注册</a></td>
+                </tr>
+                <tr>
+                    <td align="right">创建密码：</td>
+                    <td><input type="password" name="pwd"/></td>
+                </tr>
+                <tr>
+                    <td align="right">真实姓名：</td>
+                    <td><input type="text" name="realname"/></td>
+                </tr>
+                <tr>
+                    <td align="right">性别：</td>
+                    <td><input type="radio" name="sex" value="nv"/>女 <input type="radio" name="sex" value="nan"/>男</td>
+                </tr>
+                <tr>
+                    <td align="right">生日：</td>
+                    <td>
+                        <select name="year">
+                            <option value="1945">1945</option>
+                            <option value="1931">1931</option>
+                            <option value="1949">1949</option>
+                        </select>年
+                        <select name="month">
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>月
+                        <select name="day">
+                            <option value="30">30</option>
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                        </select>日
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">我现在：</td>
+                    <td>
+                        <select name="now">
+                            <option value="study">我正在上学</option>
+                            <option value="work">我已经工作</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><img src="verycode.gif"/> <a href="#">看不清楚换一张？</a></td>
+                </tr>
+                <tr>
+                    <td align="right">验证码：</td>
+                    <td><input type="text" name="verycode"/></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="image" src="btn_reg.gif"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

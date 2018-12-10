@@ -1,0 +1,28 @@
+<!--
+    对应：14-框架标签.html
+    （1）框架标签
+        <frameset></frameset>
+        1. rows属性：按照行进行划分
+            <frameset rows="80,*">
+        2. cols属性：按照列进行划分
+            <frameset cols="80,*">
+        3. <frame>具体显示的页面
+            <frame name="lower_left" src="b.html"/>
+        4. 使用框架标签时候，不能写在body里面，使用了框架标签，需要把body去掉
+        5. 如果在左边的页面超链接，想让内容显示在右边的页面中，需要设置超链接里面的target属性值为右边页面的名称
+            <a href="hello.html" target="right">超链接1</a>
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8"/>
+        <title>HTML示例</title>
+    </head>
+    <frameset rows="80,*">  <!-- 把页面划分成上下两部分 -->
+        <frame name="top" src="a.html"/>    <!-- 上面页面 -->
+        <frameset cols="80,*">      <!-- 把下面部分划分成左右两部分 -->
+            <frame name="left" src="b.html"/>   <!-- 左边的页面 -->
+            <frame name="right"/>   <!-- 右边的页面 -->
+        </frameset>
+    </frameset>
+</html>

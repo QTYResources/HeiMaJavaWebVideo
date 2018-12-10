@@ -1,0 +1,65 @@
+<!--
+    对应：09-表格标签二.html
+    （1）表格标签的合并单元格
+        1. rowspan：跨行
+            <td rowspan="3">人员信息</td>
+        2. colspan：跨列
+            <td colspan="3">人员信息</td>
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8"/>
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <!--
+            第一行：1
+            第二行到第四行都是3
+        -->
+        <table border="1" bordercolor="red" width="200">
+            <tr>
+                <td colspan="3">人员信息</td>
+            </tr>
+            <tr>
+                <td>东方不败</td>
+                <td>男</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>岳不群</td>
+                <td>女</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>林平之</td>
+                <td>男</td>
+                <td>40</td>
+            </tr>
+        </table>
+
+        <hr/>
+
+        <!--
+            多少行：3
+            数每行里面有多少个单元格
+            第一个行：3
+            第二行和第三行都是：2
+        -->
+        <table border="1" bordercolor="red" width="200" cellspacing="0">
+            <tr>
+                <td>东方不败</td>
+                <td>男</td>
+                <td rowspan="3">20</td>
+            </tr>
+            <tr>
+                <td>岳不群</td>
+                <td>女</td>
+            </tr>
+            <tr>
+                <td>林平之</td>
+                <td>男</td>
+            </tr>
+        </table>
+    </body>
+</html>

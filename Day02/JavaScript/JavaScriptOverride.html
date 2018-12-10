@@ -1,0 +1,34 @@
+<!--
+    对应：14-js的重载.html
+    （1）JavaScript的重载
+        1. 什么事重载？方法名相同，参数列表不同
+            - java里面有重载，肯定有
+        2. JavaScript里面是否有重载？
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            function add11(a, b) {
+                return a+b;
+            }
+
+            function add11(a,b,c) {
+                return a+b+c;
+            }
+
+            function add11(a,b,c,d) {
+                return a+b+c+d;
+            }
+
+            alert(add11(2,2));  // NaN
+            alert(add11(2,2,3));    // NaN
+            alert(add11(2,2,4,5));  // 13
+        </script>
+    </body>
+</html>

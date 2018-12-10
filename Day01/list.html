@@ -1,0 +1,49 @@
+<!--
+    对应：03-列表标签.html
+    （1）列表标签
+        1. 在dl里面的<dt></dt>: 上层内容
+        2. 在dl里面的<dd></dd>: 下层内容
+
+    （2）有序列表
+        <ol></ol>
+        1. 属性type: 设置排序方法，默认数字1，也可以是a或i
+        2. 在ol标签里面<li>具体内容</li>
+
+    （3）无序列表
+        <ul></ul>
+        1. 属性type：空心圆circle、实心圆disc、实心方块square，默认disc
+        2. 在ul里面<li>具体内容</li>
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8"/>
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <!-- 列表标签 -->
+        <dl>
+            <dt>传智播客</dt>
+            <dd>财务部</dd>
+            <dd>学工部</dd>
+            <dd>人事部</dd>
+        </dl>
+
+        <hr/>
+
+        <!-- 有序列表 -->
+        <ol type="i">
+            <li>财务部</li>
+            <li>学工部</li>
+            <li>人事部</li>
+        </ol>
+
+        <hr/>
+        <!-- 无序列表 -->
+        <ul type="square">
+            <li>财务部</li>
+            <li>学工部</li>
+            <li>人事部</li>
+        </ul>
+    </body>
+</html>

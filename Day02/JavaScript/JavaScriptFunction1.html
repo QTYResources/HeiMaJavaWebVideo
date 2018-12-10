@@ -1,0 +1,44 @@
+<!--
+    对应：09-js的函数一.html
+    （1）JavaScript函数
+        1. 在JavaScript里面定义函数的第一种方式：
+            a. 使用到一个关键字function
+                function 方法名(参数列表) {
+                    方法体；
+                    返回值；
+                }
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // 使用第一种方式创建函数
+            function test() {
+                alert("qqqqq");
+            }
+
+            // 调用方法
+            test();
+
+            // 定义一个有参数的方法，实现两个数的相加
+            function add1(a,b) {
+                var sum = a + b;
+                alert(sum);
+            }
+
+            add1(1,2);
+
+            // 有返回值的效果
+            function add2(a, b, c) {
+                var sum1 = a + b + c;
+                return sum1;
+            }
+
+            alert(add2(3, 4, 5));
+        </script>
+    </body>
+</html>

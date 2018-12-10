@@ -1,0 +1,60 @@
+<!--
+    对应：08-表格标签一.html
+    （1）表格标签
+        <table></table>
+        1. border：表格线
+        2. bordercolor：表格线的颜色
+        3. cellspacing：单元格之间的距离
+        4. width：表格的宽度
+        5. height：表格的高度
+        6. 在table里面
+            <tr></tr>
+            a. 设置对齐方式align：left center right
+        7. 使用th也可以表示单元格
+            表示可以实现居中加粗
+        8. 画图分析表格的写法
+            a. 首先定义一个表格的范围使用table
+            b. 在表格范围中定义一行使用tr
+            c. 在一行中定义一个单元格使用td
+        9. 操作技巧
+            首先数有多少行，数每行里面有多少个单元格
+        10. 表格的标题
+            <caption></caption>
+            
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8"/>
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <!--
+            多少行： 4
+            每行里面有多少个单元格：3
+        -->
+        <table border="1" bordercolor="blue" cellspacing="0" width="400" height="150">
+            <caption>人员信息</caption>
+            <tr align="center">
+                <td>姓名</td>
+                <td>性别</td>
+                <td>年龄</td>
+            </tr>
+            <tr>
+                <td align="right">东方不败</td>
+                <td>男</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>岳不群</td>
+                <td>女</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <th>林平之</th>
+                <th>男</th>
+                <th>40</th>
+            </tr>
+        </table>
+    </body>
+</html>

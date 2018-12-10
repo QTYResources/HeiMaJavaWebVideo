@@ -1,0 +1,36 @@
+<!--
+    对应：10-js的函数二.html
+    （1）JavaScript函数
+        1. 在JavaScript里面创建函数的第二种方式：
+            a. 匿名函数
+                var add = function(参数列表) {
+                    方法体；
+                    返回值；
+                }
+        2. 在JavaScript里面创建函数的第三种方式：
+            a. 动态函数，使用到JavaScript中的一个内置对象Function
+                var add = new Function("参数列表", "方法体和返回值");
+-->
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // 第二种方式创建函数
+            var add3 = function(m,n) {
+                alert(m+n);
+            }
+
+            // 调用方法
+            add3(5, 6);
+
+            // 第三种方式创建函数
+            var canshu = "x,y";
+            var fangfati = "var sum;sum = x + y;return sum;";
+            var add4 = new Function(canshu, fangfati);
+            alert(add4(3, 5));
+        </script>
+    </body>
+</html>

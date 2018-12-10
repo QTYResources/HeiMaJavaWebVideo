@@ -1,0 +1,24 @@
+<!--
+    对应：16-a标签的扩展.html
+    （1）a标签的扩展
+        1. 百度是网络资源
+        2. 当a标签里面访问网络资源时候，必须要加一个协议http:表示一个网络的公共协议，如果加上http协议之后，自动识别访问资源是一个网络资源
+        3. 当浏览器里面找到相关协议，首先看这个协议是不是公共协议http.
+        4. 如果不是公共协议，会去本地电脑找支持这个协议的应用程序。
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <a href="http://www.baidu.com">baidu</a>
+        <br/>
+
+        <a href="mailto:1234556@qq.com">mail</a>
+        <br/>
+        <a href="thunder://aaaaa">thunder</a>
+        <a href="ed2k://aaaaa">ed2k</a>
+    </body>
+</html>

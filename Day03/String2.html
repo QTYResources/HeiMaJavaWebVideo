@@ -1,0 +1,59 @@
+<!--
+    对应：2-js的String对象二.html
+    （1）JavaScript的String对象
+        1. 与Java相似的方法
+            a. concat()：连接字符串
+            b. charAt()：返回指定位置的字符串
+            c. indexOf()：返回字符串位置
+            d. split()：切分字符串成数组
+            e. replace()：替换字符串
+            f. substr()和substring()：返回指定范围的子字符串
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+            // concat方法
+            var str1 = "abc";
+            var str2 = "dfg";
+            document.write(str1.concat(str2));
+
+            // charAt方法
+            document.write("<hr/>");
+            var str3 = "abcdefg";
+            document.write(str3.charAt(20));    // 字符位置不存在，返回空字符串
+
+            // indexOf方法
+            document.write("<hr/>");
+            var str4 = "poiuyt";
+            document.write(str4.indexOf("w"));  // 字符不存在，返回-1
+
+            // split方法
+            document.write("<hr/>");
+            var str5 = "a-b-c-d";
+            var arr1 = str5.split("-");
+            document.write("length: " + arr1.length);
+
+            // replace
+            document.write("<hr/>");
+            var str6 = "abcd";
+            document.write(str6);
+            document.write("<br/>");
+            document.write(str6.replace("a", "Q"));
+
+            // substr substring
+            document.write("<hr/>");
+            var str7 = "abcdefghuiop";
+            document.write(str7.substr(5, 5));  // fghui从第五位开始，向后截取五个字符
+
+            document.write("<br/>");
+            document.write(str7.substring(3, 5));   // de 从第几位开始到第几位结束(3, 5)
+
+        </script>
+    </body>
+</html>

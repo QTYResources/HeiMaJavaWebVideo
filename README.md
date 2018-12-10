@@ -63,3 +63,4 @@ Day02
 Day03
     1. String1.html                              ===> String对象的常用方法
     2. hello.html                                ===> String1.html的辅助文件
+    3. String2.html                              ===> String对象的常用方法二

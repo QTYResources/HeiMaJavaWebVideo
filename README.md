@@ -59,3 +59,7 @@ Day02
     31. LocalVariable.html                       ===> JavaScript局部变量
     32. ScriptPosition.html                      ===> Script标签的位置
     33.JavaScriptOverride.html                   ===> JavaScript的重载
+
+Day03
+    1. String1.html                              ===> String对象的常用方法
+    2. hello.html                                ===> String1.html的辅助文件

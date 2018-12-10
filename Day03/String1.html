@@ -1,0 +1,61 @@
+<!--
+    对应：01-js的string对象一.html
+    （1）JavaScript的String对象
+        1. 创建String对象
+            var str = "abc";
+        2. 方法和属性（文档）
+            a. length属性：字符串的长度
+            b. 与html相关的方法
+                bold()：加粗
+                fontcolor()：设置字符串的颜色
+                fontsize()：设置字体的大小
+                link()：将字符串显示成超链接    
+                    str4.link("hello.html");
+                sub()：下标
+                sup()：上标
+-->
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML示例</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        
+            // length属性
+            var str = "abcde";
+            document.write(str.length);
+
+            // bold方法
+            document.write("<hr/>");
+            var str1 = "asdf";
+            document.write(str1.bold());
+
+            // fontcolor
+            document.write("<hr/>");
+            var str2 = "www";
+            document.write(str2.fontcolor("red"));
+
+            // fontsize
+            document.write("<hr/>");
+            var str3 = "qqqqqq";
+            document.write(str3.fontsize(5));
+
+            // link
+            document.write("<hr/>");
+            var str4 = "haha";
+            document.write(str4.link("hello.html"));
+
+            // sub和sup
+            document.write("<hr/>");
+            var s1 = "100";
+            var s2 = "200";
+            var s3 = "300";
+            document.write(s1.sub());
+            document.write(s3);
+            document.write(s2.sup());
+
+        </script>
+    </body>
+</html>
